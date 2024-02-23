@@ -14,7 +14,7 @@ The very simple SDK scan on comparing string in the your Podfile.lock. This scan
 
 ### Special Thanks
 
-An special thanks for [https://github.com/Wooder](https://github.com/Wooder) for the creating the main inpiration for this project.
+A special thanks for [https://github.com/Wooder](https://github.com/Wooder) for the creating the main inpiration for this project.
 Wooder to creating a special project for scan and seaching requiriment reason API inside your project, you can see more in [https://github.com/Wooder/ios_17_required_reason_api_scanner](https://github.com/Wooder/ios_17_required_reason_api_scanner)
 
 ### Workflow
