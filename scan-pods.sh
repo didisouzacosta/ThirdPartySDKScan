@@ -90,15 +90,16 @@ search_string=(#"Abseil"
                 "webview_flutter_wkwebview"
                )
 
-search() {
+scanPods() {
     local dir="$1"
+
+    echo ""
+    echo "## STEP 1 - Scan Pods ##"
+    echo ""
 
     cd $dir
 
     # Install pods
-    echo ""
-    echo "Installing pods in $file"
-    echo ""
     pod install
 
     # Podfile.lock path
@@ -116,6 +117,12 @@ search() {
     done
 }
 
+scan() {
+    local dir="$1"
+    
+    scanPods $dir
+}
+
 # Check if a directory path is provided as an argument
 if [ -z "$1" ]; then
     echo "Usage: $0 <directory-path>"
@@ -126,4 +133,4 @@ echo "Searching third party SDKs that need to be update"
 echo "See https://developer.apple.com/support/third-party-SDK-requirements/"
 
 # Start the search
-search $1
+scan $1
