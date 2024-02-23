@@ -22,3 +22,4 @@ Wooder to creating a special project for scan and seaching requiriment reason AP
 - [x] Scan pods
 - [ ] Scan carthage
 - [ ] Scan SPM
+- [ ] Check if SDK contains privacy manifest and signature
